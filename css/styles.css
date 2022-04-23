@@ -128,7 +128,7 @@ header {
   color: var(--bgd-color);
 }
 
-.contact.link::before {
+.item.icon-envelope::before {
   content: "";
   display: flex;
   background-repeat: no-repeat;
@@ -136,7 +136,7 @@ header {
   background-color: var(--bgd-color);
   margin-right: 10px;
   background-size: contain;
-  background-image: url(../images/envelope.svg);
+  background-image: url(../images/envelop.png);
 }
 
 /* Hero */
@@ -407,6 +407,23 @@ header {
   background-color: var(--bgd-color);
 }
 
+/* section clients */
+.clients-soc-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-soc-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+  cursor: pointer;
+}
+
 /*  adress  */
 .contact-adress {
   color: var(--secondary-color);
@@ -432,6 +449,42 @@ header {
 
 .form span {
   color: var(--secondary-color);
+}
+.form > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.links-footer {
+  margin-left: 70px;
+}
+
+.text-footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgd-color);
+  margin-bottom: 20px;
+}
+
+.footer-soc-icon {
+  fill: var(--main-bgd-color);
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover {
+  background-color: rgba(33, 150, 243, 1);
 }
 
 /* Портфолио */
