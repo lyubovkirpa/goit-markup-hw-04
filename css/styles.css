@@ -129,8 +129,7 @@ header {
   align-items: center;
 }
 
-.contact.link:hover,
-.contact.link:focus {
+.contact.link:hover {
   color: var(--bgd-color);
   
 }
@@ -278,16 +277,16 @@ header {
 }
 
 .antenna::before {
-  background-image: url(../images/antenna\ 1.png);
+  background-image: url(../images/antenna.svg);
 }
 .astronaut::before {
-  background-image: url(../images/clock\ 1.png);
+  background-image: url(../images/clock.svg);
 }
 .clock::before {
-  background-image: url(../images/diagram\ 1.png);
+  background-image: url(../images/diagram.svg);
 }
 .diagram::before {
-  background-image: url(../images/astronaut\ 1.png);
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
@@ -501,7 +500,8 @@ header {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-soc-link:hover {
+.footer-soc-link:hover,
+.footer-soc-link:focus {
   background-color: rgba(33, 150, 243, 1);
 }
 
@@ -529,8 +529,7 @@ header {
   color: var(--footer-color);
   text-decoration: none;
 }
-.contact .link-footer:hover,
-.contact .link-footer:focus {
+.contact .link-footer:hover {
   color: var(--bgd-color);
 }
 
