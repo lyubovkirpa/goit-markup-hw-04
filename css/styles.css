@@ -97,6 +97,10 @@ header {
   color: var(--bgd-color);
 }
 
+.link.current {
+  color: var(--bgd-color);
+}
+
 .header-contact {
   display: flex;
   margin-left: auto;
@@ -115,28 +119,25 @@ header {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   text-decoration: none;
+  align-items: center;
 }
-.contact.link:hover {
-  color: var(--bgd-color);
-}
+
 .contact.link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
-.link.current {
+.contact.link:hover,
+.contact.link:focus {
   color: var(--bgd-color);
+  
 }
 
-.item.icon-envelope::before {
-  content: "";
-  display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--bgd-color);
+.contact.link-icon {
+  fill: currentColor;
   margin-right: 10px;
-  background-size: contain;
-  background-image: url(../images/envelop.png);
 }
 
 /* Hero */
@@ -428,6 +429,18 @@ header {
   cursor: pointer;
   align-items: center;
 }
+.clients-soc-icon {
+  fill: currentColor;
+  }
+
+  .clients-soc-link:hover,
+  .clients-soc-link:focus {
+    color: var(--bgd-color);
+    border-color: var(--bgd-color);
+  }
+
+
+
 
 /*  adress  */
 .contact-adress {
@@ -516,7 +529,8 @@ header {
   color: var(--footer-color);
   text-decoration: none;
 }
-.contact .link-footer:hover {
+.contact .link-footer:hover,
+.contact .link-footer:focus {
   color: var(--bgd-color);
 }
 
